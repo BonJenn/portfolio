@@ -7,7 +7,7 @@
 }
 
 :root {
-    --color-primary: #191d2b;
+    --color-primary: #000000;
     --color-secondary: #27AE60;
     --color-white: #FFFFFF;
     --color-black: #000;
@@ -80,7 +80,7 @@ section {
 .sect1 {
     display: none;
     transform: translateY(0) scale(1);
-    //background-color: rgba(161, 228, 38, 0.849);
+    background-color: rgba(0, 0, 0, 0.849);
 }
 
 .sect2 {
@@ -518,6 +518,10 @@ section {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
+
+    @media (max-width: 955px) {
+        grid-template-columns: 1fr;
+    }
     .portfolio-item {
         position: relative;
         border-radius: 15px;
