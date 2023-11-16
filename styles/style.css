@@ -95,13 +95,13 @@ section {
 .sect4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(194, 205, 90);
+  background-color: rgb(0, 0, 0);
 }
 
 .sect5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(253, 210, 93);
+  background-color: rgb(0, 0, 0);
 }
 
 .active {
@@ -555,7 +555,6 @@ section {
 
 /* Blog Section */
 .blogs {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
@@ -576,6 +575,35 @@ section {
   filter: grayscale(0);
   transform: scale(1.1);
   box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Contact Section */
+.contact-content-container {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-container .left-contact {
+  flex: 2;
+}
+.contact-content-container .right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content-container .right-contact .input-control {
+  margin: 1.5rem 0;
+}
+.contact-content-container .right-contact .input-control input, .contact-content-container .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
 }
 
 /* Independent Components */
